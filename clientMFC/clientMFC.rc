@@ -1,0 +1,342 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\clientMFC.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\clientMFC.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CLIENTMFC_DIALOG DIALOGEX 0, 0, 280, 302
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Офигенный клиент для классного трояна"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_FILE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,7,16,266,214
+    EDITTEXT        IDC_PATH_EDIT,47,0,226,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Всего файлов и папок:",IDC_STATIC,7,238,78,8
+    EDITTEXT        IDC_TOTALFILES_EDIT,87,236,40,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    DEFPUSHBUTTON   "Выход",IDOK,7,263,52,16
+    COMBOBOX        IDC_DRIVES_COMBO,7,0,31,142,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Свободно:",IDC_STATIC,7,249,37,8
+    EDITTEXT        IDC_FREE_SPACE,87,249,63,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Screenshot",IDC_BUTTON1,67,265,50,14
+END
+
+IDD_LOGIN_DIALOG DIALOGEX 0, 0, 131, 57
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Введите логин и пароль"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Логин:",IDC_STATIC,11,7,24,8
+    LTEXT           "Пароль:",IDC_STATIC,7,23,28,8
+    EDITTEXT        IDC_LOGIN_EDIT,39,7,69,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PWD_EDIT,39,22,68,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,36,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,36,50,14
+END
+
+IDD_LOADFILES_DIALOG DIALOGEX 0, 0, 425, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Идет загрузка файлов с сервера"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Отмена",IDCANCEL,7,45,50,14
+    CONTROL         "",IDC_COPY_PROGRESS,"msctls_progress32",WS_BORDER | 0x1,
+                    7,7,411,14
+    LTEXT           "Файл:",IDC_STATIC,7,28,21,8
+    EDITTEXT        IDC_FILENAME_EDIT,29,27,389,12,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Пропущено файлов:",IDC_STATIC,152,43,70,8
+    EDITTEXT        IDC_SKIPPED_EDIT,224,41,40,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_CONNECT_DIALOG DIALOGEX 0, 0, 140, 65
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Параметры соединения"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Connect",IDOK,7,44,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,63,44,50,14
+    LTEXT           "Ip address:",IDC_STATIC,8,8,38,8
+    LTEXT           "Port:",IDC_STATIC,27,22,17,8
+    EDITTEXT        IDC_EDIT1,49,7,84,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,49,21,40,12,ES_AUTOHSCROLL
+END
+
+IDD_COPYASK_DIALOG DIALOGEX 0, 0, 353, 45
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Ошибка копирования файла"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Пропустить",IDOK,7,23,63,15
+    PUSHBUTTON      "Отмена",IDCANCEL,211,23,63,15
+    PUSHBUTTON      "Пропустить все",IDC_SKIPALL_BUTTON,75,23,63,15
+    PUSHBUTTON      "Повторить",IDC_RETRY_BUTTON,143,23,63,15
+    EDITTEXT        IDC_FILENAME_EDIT,7,7,339,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_SHELLEXECUTE_DIALOG DIALOGEX 0, 0, 253, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Выполнение команды ShellExecute на сервере"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Выполнить команду",IDOK,7,60,77,14
+    PUSHBUTTON      "Cancel",IDCANCEL,92,60,50,14
+    LTEXT           "Операция:",IDC_STATIC,7,7,37,8
+    LTEXT           "Имя файла:",IDC_STATIC,7,23,40,8
+    LTEXT           "Каталог:",IDC_STATIC,7,38,32,8
+    EDITTEXT        IDC_SE_FILENAME_EDIT,53,21,193,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SE_FILEDIR_EDIT,53,36,150,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SE_OPER_COMBO,53,7,85,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SEND_MESSAGE_DIALOG DIALOGEX 0, 0, 274, 68
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Послать сообщение"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Отослать",IDOK,7,47,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,65,47,50,14
+    EDITTEXT        IDC_MESSAGE_EDIT,55,23,212,12,ES_AUTOHSCROLL
+    LTEXT           "Заголовок:",IDC_STATIC,7,7,39,8
+    LTEXT           "Сообщение:",IDC_STATIC,7,24,42,8
+    EDITTEXT        IDC_EDIT2,55,7,212,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "clientMFC.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "clientMFC.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CLIENTMFC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        BOTTOMMARGIN, 295
+    END
+
+    IDD_LOADFILES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 418
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_CONNECT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_COPYASK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 346
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_SHELLEXECUTE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_SEND_MESSAGE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\clientMFC.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_LISTPOPUP_MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Загрузить...",                ID_POPUP_LOAD
+        MENUITEM "Удалить...",                  ID_POPUP_DELETE
+        MENUITEM "Расчитать объем",             ID__CALC_SIZE
+        MENUITEM "ShellExecute! (open)",        ID__32783
+        MENUITEM "Запустить! (run)",            ID__32784
+    END
+END
+
+IDR_MAIN_MENU MENU 
+BEGIN
+    POPUP "Команды"
+    BEGIN
+        MENUITEM "Послать сообщение...",        ID_SEND_MESSAGE
+        MENUITEM "Выполнить ShellExecute...",   ID_MM_SHELL_EXECUTE
+        MENUITEM "Отправить файлы...",          ID_32782
+    END
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\clientMFC.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

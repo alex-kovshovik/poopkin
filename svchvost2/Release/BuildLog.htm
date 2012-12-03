@@ -1,0 +1,53 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=windows-1251">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: svchvost2, Configuration: Release|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "e:\prog\test\svchvost2\Release\RSP000001.rsp" with contents
+[
+/O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /FD /EHsc /ML /GS /Fo"Release/" /Fd"Release/vc70.pdb" /W3 /c /Wp64 /Zi /TP
+.\main.cpp
+]
+Creating command line "cl.exe @e:\prog\test\svchvost2\Release\RSP000001.rsp /nologo"
+Creating command line "rc.exe /fo"Release/svchvost2.res" .\svchvost2.rc"
+Creating temporary file "e:\prog\test\svchvost2\Release\RSP000002.rsp" with contents
+[
+/OUT:"Release/svchvost.exe" /INCREMENTAL:NO /NOLOGO /DEBUG /PDB:"Release/svchvost2.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /MACHINE:X86  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
+.\Release\main.obj
+.\Release\svchvost2.res
+]
+Creating command line "link.exe @e:\prog\test\svchvost2\Release\RSP000002.rsp"
+Creating temporary file "e:\prog\test\svchvost2\Release\BAT000003.bat" with contents
+[
+@echo off
+copy Release\svchvost.exe ..\client\svchvost.exe
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: A tool returned an error code from "Performing Post-Build Event..."
+exit 1
+:VCEnd
+]
+Creating command line "e:\prog\test\svchvost2\Release\BAT000003.bat"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+main.cpp
+Compiling resources...
+Linking...
+Performing Post-Build Event...
+Скопировано файлов:         1.
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://e:\prog\test\svchvost2\Release\BuildLog.htm"
+svchvost2 - 0 error(s), 0 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>
