@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quest", "Quest.vcproj", "{BD6370EC-E440-435F-B81D-8396AF09FA80}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{BD6370EC-E440-435F-B81D-8396AF09FA80}.Debug.ActiveCfg = Debug|Win32
+		{BD6370EC-E440-435F-B81D-8396AF09FA80}.Debug.Build.0 = Debug|Win32
+		{BD6370EC-E440-435F-B81D-8396AF09FA80}.Release.ActiveCfg = Release|Win32
+		{BD6370EC-E440-435F-B81D-8396AF09FA80}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
